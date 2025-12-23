@@ -4,7 +4,7 @@ const dbHoteles = [
         nombre: "Constance Tsarabanjina",
         ubicacion: "Isla Tsarabanjina, Noroeste",
         precio: "$450 / noche",
-        img: "imagenes/constance.jpg",
+        img: "imagenes/Constance.jpg",
         descripcion_corta: "Lujo descalzo en una isla privada virgen.",
         descripcion_larga: "Disfruta de la exclusividad en su máxima expresión. Constance Tsarabanjina es una isla sagrada donde no se requieren zapatos. Ofrece bungalows de madera de rosa con techos de paja, comida todo incluido con mariscos frescos y buceo de clase mundial.",
         servicios: ["Playa Privada", "Todo Incluido", "Buceo PADI", "Spa", "Wi-Fi"],
