@@ -1,0 +1,425 @@
+{
+    "avenida-baobabs": {
+        "titulo": "Avenida de los Baobabs",
+        "weatherId": "231250",
+        "tagline": "El Atardecer de los Gigantes",
+        "precio": "190.00",
+        "precioDetalle": "por grupo de hasta 6 personas",
+        "duracion": "5-6 Horas",
+        "idiomas": "Español, Inglés, Francés, Malgache",
+        "bannerImg": "imagenes/baobabs1.jpg",
+        "imagenes": [
+            "imagenes/baobabs1.jpg",
+            "imagenes/baobabs2.jpg",
+            "imagenes/baobabs3.jpg",
+            "imagenes/baobabs4.jpg",
+            "imagenes/baobabs5.jpg"
+        ],
+        "descripcion": "Olvídate de los tours habituales. Somos un equipo local que te conecta con guías apasionados de la región de Menabe, listos para revelarte el alma auténtica de Morondava con historias y leyendas que no encontrarás en ningún otro lugar.",
+        "porQueElegir": [
+            "Guías expertos que consideran a estos árboles parte de su linaje.",
+            "Itinerarios únicos para evitar multitudes.",
+            "Flexibilidad total para paradas fotográficas."
+        ],
+        "itinerario": [
+            {
+                "punto": "Inicio en 4x4",
+                "tiempo": "45 min",
+                "desc": "Recogida en hotel y travesía por paisajes de tierra roja."
+            },
+            {
+                "punto": "Baobab Sagrado y Enamorados",
+                "tiempo": "1 hora",
+                "desc": "Misticismo y la leyenda de amor prohibido de los árboles entrelazados."
+            },
+            {
+                "punto": "Caminata entre Gigantes",
+                "tiempo": "1 hora",
+                "desc": "Tiempo libre entre árboles de 800 años e interacción rural."
+            },
+            {
+                "punto": "El Espectáculo del Atardecer",
+                "tiempo": "1 hora",
+                "desc": "Puesta de sol estratégica para fotografía de alta calidad."
+            }
+        ],
+        "incluido": [
+            "Transporte privado 4x4 AC",
+            "Agua embotellada",
+            "Gastos de parking"
+        ],
+        "noIncluido": [
+            "Almuerzo / Cena",
+            "Propinas"
+        ],
+        "infoAdicional": "No accesible para sillas de ruedas. Respeto a los Fady: no señalar árboles sagrados con el dedo índice.",
+        "cancelacion": "Reembolso íntegro cancelando 24h antes."
+    },
+    "isalo": {
+        "titulo": "Parque Nacional de Isalo",
+        "weatherId": "1064890",
+        "tagline": "El Gran Cañón de Madagascar",
+        "precio": "135.00",
+        "precioDetalle": "por adulto (incluye todas las tasas)",
+        "duracion": "7-9 Horas",
+        "idiomas": "Español, Inglés, Francés, Italiano",
+        "bannerImg": "imagenes/isalo1.jpg",
+        "imagenes": [
+            "imagenes/isalo1.jpg",
+            "imagenes/isalo2.jpg",
+            "imagenes/isalo3.jpg",
+            "imagenes/isalo4.jpg",
+            "imagenes/isalo5.jpg"
+        ],
+        "descripcion": "Deja atrás los recorridos convencionales. Somos un equipo de especialistas que te conecta con guías oficiales de la etnia Bara, listos para revelarte los secretos del macizo jurásico.",
+        "porQueElegir": [
+            "Guías oficiales de la etnia Bara.",
+            "Rutas adaptables a tu nivel físico.",
+            "Gestión integral de permisos de entrada."
+        ],
+        "itinerario": [
+            {
+                "punto": "Salida hacia el Macizo",
+                "tiempo": "30 min",
+                "desc": "Traslado en Jeep y charla sobre geología jurásica."
+            },
+            {
+                "punto": "Cañón de los Makis",
+                "tiempo": "2.5 horas",
+                "desc": "Búsqueda de lémures y observación de tumbas sagradas en acantilados."
+            },
+            {
+                "punto": "Piscina Natural",
+                "tiempo": "1.5 horas",
+                "desc": "Oasis de agua cristalina rodeado de helechos gigantes."
+            },
+            {
+                "punto": "Ventana de Isalo",
+                "tiempo": "45 min",
+                "desc": "Atardecer mágico que encuadra el sol sobre la llanura."
+            }
+        ],
+        "incluido": [
+            "Entradas oficiales ANGAP",
+            "Guía certificado",
+            "Almuerzo tipo picnic"
+        ],
+        "noIncluido": [
+            "Bebidas alcohólicas",
+            "Propinas"
+        ],
+        "infoAdicional": "Requiere condición física moderada. Prohibido señalar tumbas con el dedo índice.",
+        "cancelacion": "Reembolso íntegro cancelando 24h antes."
+    },
+    "nosy-be": {
+        "titulo": "Nosy Be",
+        "weatherId": "1058381",
+        "tagline": "El Corazón de la Isla de los Perfumes",
+        "precio": "92.00",
+        "precioDetalle": "por adulto (varía según el grupo)",
+        "duracion": "6-9 Horas",
+        "idiomas": "Español, Inglés, Italiano, Francés, Polaco",
+        "bannerImg": "imagenes/NosyBe1.jpg",
+        "imagenes": [
+            "imagenes/NosyBe1.jpg",
+            "imagenes/nosybe2.jpg",
+            "imagenes/nosybe3.jpg",
+            "imagenes/nosybe4.jpg",
+            "imagenes/nosybe5.jpg"
+        ],
+        "descripcion": "Somos un equipo italo-malgache que te conecta con guías locales apasionados. Desde los mercados de Hell-Ville hasta la puesta de sol del Mont Passot.",
+        "porQueElegir": [
+            "Guías expertos como Vanessa y Claudio.",
+            "Itinerarios que descubren joyas ocultas y cascadas.",
+            "Grupos pequeños para un ambiente íntimo."
+        ],
+        "itinerario": [
+            {
+                "punto": "Mercados de Hell-Ville",
+                "tiempo": "1 hora",
+                "desc": "Inmersión cultural entre aromas exóticos y artesanías."
+            },
+            {
+                "punto": "Árbol Sagrado",
+                "tiempo": "30 min",
+                "desc": "Visita al baniano histórico plantado en 1836."
+            },
+            {
+                "punto": "Playa de Andilana",
+                "tiempo": "2.5 horas",
+                "desc": "Relajación y opción de almuerzo con pescado fresco."
+            },
+            {
+                "punto": "Mont Passot",
+                "tiempo": "45 min",
+                "desc": "Vista de 360° y atardecer sobre lagos volcánicos."
+            }
+        ],
+        "incluido": [
+            "Transporte privado AC",
+            "Agua embotellada",
+            "Entrada Mont Passot"
+        ],
+        "noIncluido": [
+            "Almuerzo",
+            "Propinas"
+        ],
+        "infoAdicional": "Uso de pareo (lamba) obligatorio en el Árbol Sagrado. No accesible para sillas de ruedas.",
+        "cancelacion": "Reembolso íntegro cancelando 24h antes."
+    },
+    "tsingy": {
+        "titulo": "Tsingy de Bemaraha",
+        "weatherId": "1062663",
+        "tagline": "El Laberinto de Agujas de Piedra",
+        "precio": "520.00",
+        "precioDetalle": "Expedición de 3 días desde Morondava",
+        "duracion": "3 Días",
+        "idiomas": "Español, Inglés, Francés",
+        "bannerImg": "imagenes/tsingy1.jpg",
+        "imagenes": [
+            "imagenes/tsingy1.jpg",
+            "imagenes/tsingy2.jpg",
+            "imagenes/tsingy3.jpg",
+            "imagenes/tsingy4.jpg",
+            "imagenes/tsingy5.jpg"
+        ],
+        "descripcion": "Prepárate para la aventura más extrema de Madagascar. Conquistarás una catedral de roca cruzando puentes colgantes sobre abismos de piedra caliza.",
+        "porQueElegir": [
+            "Guías de escalada expertos en seguridad vertical.",
+            "Equipo de seguridad completo (arnés, cascos) incluido.",
+            "Logística de expedición 4x4 y cruce de ríos."
+        ],
+        "itinerario": [
+            {
+                "punto": "Travesía del Oeste",
+                "tiempo": "8 horas",
+                "desc": "Viaje en 4x4 y cruce de ríos en barcazas tradicionales."
+            },
+            {
+                "punto": "Gran Tsingy",
+                "tiempo": "6 horas",
+                "desc": "Ascenso por vías ferratas y cruce del puente colgante."
+            },
+            {
+                "punto": "Pequeño Tsingy",
+                "tiempo": "4 horas",
+                "desc": "Exploración de laberintos y paseo en piragua por el río Manambolo."
+            }
+        ],
+        "incluido": [
+            "Transporte 4x4 especializado",
+            "Equipo de seguridad",
+            "Entradas ANGAP"
+        ],
+        "noIncluido": [
+            "Alojamiento en Bekopaka",
+            "Comidas y cenas"
+        ],
+        "infoAdicional": "No apto para personas con vértigo. Obligatorio calzado de trekking cerrado.",
+        "cancelacion": "Cancelar con 48h de antelación. Cerrado de Noviembre a Mayo."
+    },
+    "sainte-marie": {
+        "titulo": "Isla Sainte Marie",
+        "weatherId": "2820577",
+        "tagline": "El Refugio de los Piratas y las Ballenas",
+        "precio": "78.00",
+        "precioDetalle": "por adulto (varía según temporada de ballenas)",
+        "duracion": "6-8 Horas",
+        "idiomas": "Español, Inglés, Francés, Italiano",
+        "bannerImg": "imagenes/sainte1.jpg",
+        "imagenes": [
+            "imagenes/sainte1.jpg",
+            "imagenes/sainte2.jpg",
+            "imagenes/sainte3.jpg",
+            "imagenes/sainte4.jpg",
+            "imagenes/sainte5.jpg"
+        ],
+        "descripcion": "Escapa a una isla donde el tiempo se detuvo. Desde el único cementerio pirata del mundo hasta el majestuoso avistamiento de ballenas jorobadas.",
+        "porQueElegir": [
+            "Avistamiento responsable respetando distancias de seguridad.",
+            "Guías locales narradores de leyendas de bucaneros.",
+            "Flexibilidad para explorar a pie, en bici o barco."
+        ],
+        "itinerario": [
+            {
+                "punto": "Safari de Ballenas",
+                "tiempo": "3 horas",
+                "desc": "Observación de cetáceos (Julio-Sept) o snorkel en arrecifes."
+            },
+            {
+                "punto": "Cementerio Pirata",
+                "tiempo": "1 hora",
+                "desc": "Historia de barcos naufragados y lápidas con calaveras."
+            },
+            {
+                "punto": "Île aux Nattes",
+                "tiempo": "2.5 horas",
+                "desc": "Cruce en piragua a una isla sin coches con playas vírgenes."
+            }
+        ],
+        "incluido": [
+            "Transporte en barco motorizado",
+            "Entradas al cementerio",
+            "Guía experto"
+        ],
+        "noIncluido": [
+            "Almuerzo (langosta fresca recomendada)",
+            "Alquiler de bicicletas"
+        ],
+        "infoAdicional": "Respetar los días Fady donde no se permite pescar o entrar al mar.",
+        "cancelacion": "Reembolso íntegro cancelando 24h antes."
+    },
+    "ranomafana": {
+        "titulo": "Ranomafana",
+        "weatherId": "1722985",
+        "tagline": "El Corazón de la Selva Neblinosa",
+        "precio": "65.00",
+        "precioDetalle": "por adulto (incluye sesión nocturna)",
+        "duracion": "5-8 Horas",
+        "idiomas": "Español, Inglés, Francés",
+        "bannerImg": "imagenes/ranomafana1.jpg",
+        "imagenes": [
+            "imagenes/ranomafana1.jpg",
+            "imagenes/ranomafana2.jpg",
+            "imagenes/ranomafana3.jpg",
+            "imagenes/ranomafana4.jpg",
+            "imagenes/ranomafana5.jpg"
+        ],
+        "descripcion": "Adéntrate en el reino de la biodiversidad. Buscaremos al rarísimo Lémur de Bambú Dorado en una selva tropical descubierta en 1986.",
+        "porQueElegir": [
+            "Rastreadores locales expertos en identificar aves.",
+            "Experiencia 24h: Trekking diurno + caminata nocturna.",
+            "Guías con formación en biología y conservación."
+        ],
+        "itinerario": [
+            {
+                "punto": "Trekking de Biodiversidad",
+                "tiempo": "4 horas",
+                "desc": "Búsqueda del Lémur de Bambú Dorado y plantas medicinales."
+            },
+            {
+                "punto": "Cascada de Namorona",
+                "tiempo": "45 min",
+                "desc": "Miradores fotográficos del rugido de la selva tropical."
+            },
+            {
+                "punto": "Safari Nocturno",
+                "tiempo": "1 hora",
+                "desc": "Búsqueda del Lémur Ratón y camaleones diminutos."
+            }
+        ],
+        "incluido": [
+            "Guía rastreador certificado",
+            "Entrada oficial",
+            "Linternas nocturnas"
+        ],
+        "noIncluido": [
+            "Almuerzo",
+            "Acceso a termas del pueblo"
+        ],
+        "infoAdicional": "Terreno resbaladizo; calzado de montaña obligatorio. Traer chubasquero.",
+        "cancelacion": "Reembolso íntegro cancelando 24h antes."
+    },
+    "diego-suarez": {
+        "titulo": "Diego Suárez",
+        "weatherId": "6534995",
+        "tagline": "Bahías de Ensueño y Formaciones Rojas",
+        "precio": "110.00",
+        "precioDetalle": "por adulto (varía según tours marítimos)",
+        "duracion": "8-10 Horas",
+        "idiomas": "Español, Inglés, Francés, Italiano",
+        "bannerImg": "imagenes/DiegoSuárez1.jpg",
+        "imagenes": [
+            "imagenes/DiegoSuárez1.jpg",
+            "imagenes/DiegoSuárez2.jpg",
+            "imagenes/DiegoSuárez3.jpg",
+            "imagenes/DiegoSuárez4.jpg",
+            "imagenes/DiegoSuárez5.jpg"
+        ],
+        "descripcion": "Explora los extremos del norte. Desde los impresionantes Tsingy Rojos hasta las aguas turquesas del Mar de Esmeralda.",
+        "porQueElegir": [
+            "Vehículos 4x4 Premium para pistas de laterita roja.",
+            "Guías multilingües expertos en historia naval.",
+            "Itinerarios flexibles para fotografía en los Tsingy."
+        ],
+        "itinerario": [
+            {
+                "punto": "Tsingy Rojos",
+                "tiempo": "2 horas",
+                "desc": "Paisaje marciano de arena y laterita único en el mundo."
+            },
+            {
+                "punto": "Montaña de Ámbar",
+                "tiempo": "2.5 horas",
+                "desc": "Selva de montaña con camaleones y cascadas sagradas."
+            },
+            {
+                "punto": "Playa de Ramena",
+                "tiempo": "2.5 horas",
+                "desc": "Relajación en las Tres Bahías y gastronomía de mariscos."
+            }
+        ],
+        "incluido": [
+            "Transporte 4x4 AC",
+            "Entradas a parques",
+            "Agua embotellada"
+        ],
+        "noIncluido": [
+            "Almuerzo en Ramena",
+            "Equipo de snorkel"
+        ],
+        "infoAdicional": "Fady: No llevar carne de cerdo ni gritar cerca de cascadas sagradas.",
+        "cancelacion": "Reembolso íntegro cancelando 24h antes."
+    },
+    "reserva-anja": {
+        "titulo": "Reserva de Anja",
+        "weatherId": "1071296",
+        "tagline": "El Santuario del Lémur de Cola Anillada",
+        "precio": "38.00",
+        "precioDetalle": "incluye tasa de desarrollo comunitario",
+        "duracion": "2-4 Horas",
+        "idiomas": "Español, Inglés, Francés, Italiano",
+        "bannerImg": "imagenes/Anja1.jpg",
+        "imagenes": [
+            "imagenes/Anja1.jpg",
+            "imagenes/Anja2.jpg",
+            "imagenes/Anja3.jpg",
+            "imagenes/Anja4.jpg",
+            "imagenes/Anja5.jpg"
+        ],
+        "descripcion": "El mejor ejemplo de turismo sostenible. Tu visita financia directamente escuelas y salud de la comunidad local AMI.",
+        "porQueElegir": [
+            "Avistamiento garantizado del icónico lémur Maki.",
+            "Impacto social directo en la comunidad de Anja.",
+            "Senderos accesibles para todas las edades."
+        ],
+        "itinerario": [
+            {
+                "punto": "Encuentro con Makis",
+                "tiempo": "1.5 horas",
+                "desc": "Fotografía a corta distancia de lémures en libertad."
+            },
+            {
+                "punto": "Cuevas Ancestrales",
+                "tiempo": "1 hora",
+                "desc": "Refugios de guerra del pueblo Betsileo y vistas al valle."
+            },
+            {
+                "punto": "Jardín Botánico",
+                "tiempo": "45 min",
+                "desc": "Observación de orquídeas endémicas y camaleones de montaña."
+            }
+        ],
+        "incluido": [
+            "Guía comunitario bilingüe",
+            "Entrada oficial",
+            "Agua embotellada"
+        ],
+        "noIncluido": [
+            "Almuerzo",
+            "Propinas"
+        ],
+        "infoAdicional": "Fady: No tocar lémures. No usar colores extremadamente chillones.",
+        "cancelacion": "Reembolso íntegro cancelando 24h antes."
+    }
+}

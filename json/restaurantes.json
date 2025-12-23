@@ -1,0 +1,358 @@
+[
+    {
+        "id": 1,
+        "nombre": "La Varangue",
+        "categoria": "Alta Cocina Francesa-Malgache",
+        "precio": "$$$$",
+        "ciudad": "Antananarivo",
+        "pais": "Madagascar",
+        "descripcion": [
+            "Considerado uno de los mejores restaurantes de la capital, ofrece una fusión sofisticada de técnicas francesas con ingredientes locales de Madagascar.",
+            "Ubicado en una casona histórica decorada con antigüedades. Su especialidad es el filete de cebú y el foie gras artesanal."
+        ],
+        "imagenes": [
+            "https://raw.githubusercontent.com/Jhontan200/Prueba/main/imagenes/la-varangue.webp",
+            "https://raw.githubusercontent.com/Jhontan200/Prueba/main/imagenes/restaurante_1_1.webp",
+            "https://raw.githubusercontent.com/Jhontan200/Prueba/main/imagenes/restaurante_1_2.webp",
+            "https://raw.githubusercontent.com/Jhontan200/Prueba/main/imagenes/restaurante_1_3.webp",
+            "https://raw.githubusercontent.com/Jhontan200/Prueba/main/imagenes/restaurante_1_4.webp",
+            "https://raw.githubusercontent.com/Jhontan200/Prueba/main/imagenes/restaurante_1_5.webp"
+        ],
+        "servicios": [
+            {
+                "icon": "wifi",
+                "label": "Wi-Fi Gratis"
+            },
+            {
+                "icon": "wine_bar",
+                "label": "Cava de Vinos"
+            },
+            {
+                "icon": "deck",
+                "label": "Terraza Jardín"
+            },
+            {
+                "icon": "payments",
+                "label": "Acepta Tarjetas"
+            },
+            {
+                "icon": "local_parking",
+                "label": "Valet Parking"
+            }
+        ],
+        "ubicacion": {
+            "direccion": "17 Rue Antaninarenina, Antananarivo 101, Madagascar",
+            "horario": {
+                "lunes": "12:00 - 14:30, 19:00 - 22:30",
+                "martes": "12:00 - 14:30, 19:00 - 22:30",
+                "miercoles": "12:00 - 14:30, 19:00 - 22:30",
+                "jueves": "12:00 - 14:30, 19:00 - 22:30",
+                "viernes": "12:00 - 14:30, 19:00 - 22:30",
+                "sabado": "19:00 - 23:00",
+                "domingo": "Cerrado"
+            },
+            "iframe_mapa": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3774.240561570183!2d47.5218!3d-18.9103!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x21f07e05698b67b1%3A0x67d3d2a7f59d436c!2sLa%20Varangue!5e0!3m2!1ses!2s!4v1715800000000\" width=\"100%\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\"></iframe>"
+        },
+        "platos_destacados": [
+            {
+                "nombre": "Filete de Cebú a la Pimienta",
+                "desc": "Carne tierna de cebú local con pimienta verde de Madagascar.",
+                "img": "https://raw.githubusercontent.com/Jhontan200/Prueba/main/imagenes/restaurante_1_plato1.webp"
+            },
+            {
+                "nombre": "Magret de Canard",
+                "desc": "Pato con reducción de vainilla y frutas tropicales.",
+                "img": "https://raw.githubusercontent.com/Jhontan200/Prueba/main/imagenes/restaurante_1_plato2.webp"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "nombre": "L'Heure Bleue",
+        "categoria": "Mariscos y Cocina Tropical",
+        "precio": "$$$",
+        "ciudad": "Nosy Be",
+        "pais": "Madagascar",
+        "descripcion": [
+            "Situado en las playas vírgenes de Nosy Be, este restaurante ofrece los mariscos más frescos del canal de Mozambique.",
+            "Ambiente 'chic descalzo'. Disfruta de la brisa marina mientras pruebas nuestra famosa langosta a la parrilla."
+        ],
+        "imagenes": [
+            "https://raw.githubusercontent.com/Jhontan200/Prueba/main/imagenes/LHeure_Bleue.webp",
+            "https://raw.githubusercontent.com/Jhontan200/Prueba/main/imagenes/restaurante_2_1.webp",
+            "https://raw.githubusercontent.com/Jhontan200/Prueba/main/imagenes/restaurante_2_2.webp",
+            "https://raw.githubusercontent.com/Jhontan200/Prueba/main/imagenes/restaurante_2_3.webp"
+        ],
+        "servicios": [
+            {
+                "icon": "wifi",
+                "label": "Wi-Fi Gratis"
+            },
+            {
+                "icon": "pool",
+                "label": "Vista al Mar"
+            },
+            {
+                "icon": "liquor",
+                "label": "Bar de Rones"
+            },
+            {
+                "icon": "payments",
+                "label": "Acepta Tarjetas"
+            }
+        ],
+        "ubicacion": {
+            "direccion": "Madirokely Beach, Nosy Be, Madagascar",
+            "horario": {
+                "lunes": "07:00 - 22:00",
+                "martes": "07:00 - 22:00",
+                "miercoles": "07:00 - 22:00",
+                "jueves": "07:00 - 22:00",
+                "viernes": "07:00 - 23:00",
+                "sabado": "07:00 - 23:00",
+                "domingo": "07:00 - 22:00"
+            },
+            "iframe_mapa": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3897.8!2d48.2!3d-13.4!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2213cf7f79!2zTCdIZXVyZSBCbGV1ZQ!5e0!3m2!1ses!2s!4v1715800000001\" width=\"100%\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\"></iframe>"
+        },
+        "platos_destacados": [
+            {
+                "nombre": "Langosta a la Vainilla",
+                "desc": "Langosta fresca bañada en mantequilla infusionada con vainilla de Sambava.",
+                "img": "https://raw.githubusercontent.com/Jhontan200/Prueba/main/imagenes/restaurante_2_plato1.webp"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "nombre": "Valahara Antsirabe",
+        "categoria": "Comida Típica Tradicional",
+        "precio": "$$",
+        "ciudad": "Antsirabe",
+        "pais": "Madagascar",
+        "descripcion": [
+            "Un oasis de calma en la ciudad de las aguas térmicas. Valahara se enfoca en la frescura de los ingredientes locales de las Tierras Altas.",
+            "Decoración rústica con materiales naturales. No dejes de probar el Romazava, el plato nacional de Madagascar."
+        ],
+        "imagenes": [
+            "https://raw.githubusercontent.com/Jhontan200/Prueba/main/imagenes/Valahara_Antsirabe.webp",
+            "https://raw.githubusercontent.com/Jhontan200/Prueba/main/imagenes/restaurante_3_1.webp",
+            "https://raw.githubusercontent.com/Jhontan200/Prueba/main/imagenes/restaurante_3_2.webp",
+            "https://raw.githubusercontent.com/Jhontan200/Prueba/main/imagenes/restaurante_3_3.webp",
+            "https://raw.githubusercontent.com/Jhontan200/Prueba/main/imagenes/restaurante_3_4.webp"
+        ],
+        "servicios": [
+            {
+                "icon": "wifi",
+                "label": "Wi-Fi Gratis"
+            },
+            {
+                "icon": "fireplace",
+                "label": "Chimenea"
+            },
+            {
+                "icon": "coffee",
+                "label": "Café de Especialidad"
+            },
+            {
+                "icon": "family_restroom",
+                "label": "Zona Niños"
+            }
+        ],
+        "ubicacion": {
+            "direccion": "Avenue de l'Indépendance, Antsirabe, Madagascar",
+            "horario": {
+                "lunes": "08:00 - 21:00",
+                "martes": "08:00 - 21:00",
+                "miercoles": "08:00 - 21:00",
+                "jueves": "08:00 - 21:00",
+                "viernes": "08:00 - 22:00",
+                "sabado": "08:00 - 22:00",
+                "domingo": "08:00 - 15:00"
+            },
+            "iframe_mapa": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3752.4!2d47.0!3d-19.8!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x21f07!2sValahara!5e0!3m2!1ses!2s!4v1715800000002\" width=\"100%\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\"></iframe>"
+        },
+        "platos_destacados": [
+            {
+                "nombre": "Romazava de Cebú",
+                "desc": "Caldo de hojas verdes picantes (brèdes) con carne de cebú.",
+                "img": "https://raw.githubusercontent.com/Jhontan200/Prueba/main/imagenes/restaurante_3_plato1.webp"
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "nombre": "Su e Giu",
+        "categoria": "Italiana y Mediterránea",
+        "precio": "$$$",
+        "ciudad": "Antananarivo",
+        "pais": "Madagascar",
+        "descripcion": [
+            "La mejor cocina italiana en la capital malgache. Combinamos recetas tradicionales de la nonna con productos locales frescos.",
+            "Famoso por sus pastas artesanales hechas a mano diariamente y su terraza con vistas a la ciudad."
+        ],
+        "imagenes": [
+            "https://raw.githubusercontent.com/Jhontan200/Prueba/main/imagenes/Su_e_Giu.webp",
+            "https://raw.githubusercontent.com/Jhontan200/Prueba/main/imagenes/restaurante_4_1.webp",
+            "https://raw.githubusercontent.com/Jhontan200/Prueba/main/imagenes/restaurante_4_2.webp",
+            "https://raw.githubusercontent.com/Jhontan200/Prueba/main/imagenes/restaurante_4_3.webp",
+            "https://raw.githubusercontent.com/Jhontan200/Prueba/main/imagenes/restaurante_4_4.webp",
+            "https://raw.githubusercontent.com/Jhontan200/Prueba/main/imagenes/restaurante_4_5.webp",
+            "https://raw.githubusercontent.com/Jhontan200/Prueba/main/imagenes/restaurante_4_6.webp"
+        ],
+        "servicios": [
+            {
+                "icon": "wifi",
+                "label": "Wi-Fi Gratis"
+            },
+            {
+                "icon": "local_pizza",
+                "label": "Horno de Leña"
+            },
+            {
+                "icon": "deck",
+                "label": "Terraza"
+            },
+            {
+                "icon": "payments",
+                "label": "Acepta Tarjetas"
+            }
+        ],
+        "ubicacion": {
+            "direccion": "Route d'Ambohitrakely, Antananarivo, Madagascar",
+            "horario": {
+                "lunes": "11:30 - 14:30, 18:30 - 22:00",
+                "martes": "11:30 - 14:30, 18:30 - 22:00",
+                "miercoles": "11:30 - 14:30, 18:30 - 22:00",
+                "jueves": "11:30 - 14:30, 18:30 - 22:00",
+                "viernes": "11:30 - 14:30, 18:30 - 22:30",
+                "sabado": "11:30 - 22:30",
+                "domingo": "12:00 - 21:00"
+            },
+            "iframe_mapa": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3774.2!2d47.5!3d-18.9!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x21f!2sSuEGiu!5e0!3m2!1ses!2s!4v1715800000003\" width=\"100%\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\"></iframe>"
+        },
+        "platos_destacados": [
+            {
+                "nombre": "Pasta con Gambas",
+                "desc": "Linguine con gambas gigantes de Madagascar y aceite de oliva.",
+                "img": "https://raw.githubusercontent.com/Jhontan200/Prueba/main/imagenes/restaurante_4_plato1.webp"
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "nombre": "La Plantation",
+        "categoria": "Fusión Gourmet",
+        "precio": "$$$",
+        "ciudad": "Toamasina",
+        "pais": "Madagascar",
+        "descripcion": [
+            "Ubicado en el principal puerto de la isla, La Plantation es una oda a las especias malgaches.",
+            "Ambiente colonial con un jardín tropical donde se puede degustar el pescado del día con salsas exóticas."
+        ],
+        "imagenes": [
+            "https://raw.githubusercontent.com/Jhontan200/Prueba/main/imagenes/la_plantation.webp",
+            "https://raw.githubusercontent.com/Jhontan200/Prueba/main/imagenes/restaurante_5_1.webp",
+            "https://raw.githubusercontent.com/Jhontan200/Prueba/main/imagenes/restaurante_5_2.webp",
+            "https://raw.githubusercontent.com/Jhontan200/Prueba/main/imagenes/restaurante_5_3.webp",
+            "https://raw.githubusercontent.com/Jhontan200/Prueba/main/imagenes/restaurante_5_4.webp",
+            "https://raw.githubusercontent.com/Jhontan200/Prueba/main/imagenes/restaurante_5_5.webp"
+        ],
+        "servicios": [
+            {
+                "icon": "wifi",
+                "label": "Wi-Fi Gratis"
+            },
+            {
+                "icon": "park",
+                "label": "Jardín Tropical"
+            },
+            {
+                "icon": "payments",
+                "label": "Acepta Tarjetas"
+            },
+            {
+                "icon": "celebration",
+                "label": "Eventos"
+            }
+        ],
+        "ubicacion": {
+            "direccion": "Boulevard Joffre, Toamasina 501, Madagascar",
+            "horario": {
+                "lunes": "12:00 - 22:00",
+                "martes": "12:00 - 22:00",
+                "miercoles": "12:00 - 22:00",
+                "jueves": "12:00 - 22:00",
+                "viernes": "12:00 - 23:00",
+                "sabado": "12:00 - 23:00",
+                "domingo": "12:00 - 16:00"
+            },
+            "iframe_mapa": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3742.4!2d49.4!3d-18.1!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x21!2sLaPlantation!5e0!3m2!1ses!2s!4v1715800000004\" width=\"100%\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\"></iframe>"
+        },
+        "platos_destacados": [
+            {
+                "nombre": "Pescado al Coco",
+                "desc": "Filete de pescado blanco con leche de coco fresca y cúrcuma.",
+                "img": "https://raw.githubusercontent.com/Jhontan200/Prueba/main/imagenes/restaurante_5_plato1.webp"
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "nombre": "L'Orion",
+        "categoria": "Especialidades Malgaches",
+        "precio": "$$",
+        "ciudad": "Antananarivo",
+        "pais": "Madagascar",
+        "descripcion": [
+            "El punto de encuentro para quienes buscan la comida malgache más auténtica en un ambiente moderno y musical.",
+            "Especialistas en Ravitoto sy Henakisoa y parrilladas de carne de cebú."
+        ],
+        "imagenes": [
+            "https://raw.githubusercontent.com/Jhontan200/Prueba/main/imagenes/Lorion.webp",
+            "https://raw.githubusercontent.com/Jhontan200/Prueba/main/imagenes/restaurante_6_1.webp",
+            "https://raw.githubusercontent.com/Jhontan200/Prueba/main/imagenes/restaurante_6_2.webp",
+            "https://raw.githubusercontent.com/Jhontan200/Prueba/main/imagenes/restaurante_6_3.webp",
+            "https://raw.githubusercontent.com/Jhontan200/Prueba/main/imagenes/restaurante_6_4.webp",
+            "https://raw.githubusercontent.com/Jhontan200/Prueba/main/imagenes/restaurante_6_5.webp",
+            "https://raw.githubusercontent.com/Jhontan200/Prueba/main/imagenes/restaurante_6_6.webp"
+        ],
+        "servicios": [
+            {
+                "icon": "wifi",
+                "label": "Wi-Fi Gratis"
+            },
+            {
+                "icon": "music_note",
+                "label": "Música en Vivo"
+            },
+            {
+                "icon": "groups",
+                "label": "Ideal Grupos"
+            },
+            {
+                "icon": "takeout_dining",
+                "label": "Para Llevar"
+            }
+        ],
+        "ubicacion": {
+            "direccion": "Quartier Isoraka, Antananarivo, Madagascar",
+            "horario": {
+                "lunes": "09:00 - 21:30",
+                "martes": "09:00 - 21:30",
+                "miercoles": "09:00 - 21:30",
+                "jueves": "09:00 - 21:30",
+                "viernes": "09:00 - 22:30",
+                "sabado": "10:00 - 23:00",
+                "domingo": "Cerrado"
+            },
+            "iframe_mapa": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3774.2!2d47.51!3d-18.9!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2!2sOrion!5e0!3m2!1ses!2s!4v1715800000005\" width=\"100%\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\"></iframe>"
+        },
+        "platos_destacados": [
+            {
+                "nombre": "Ravitoto Tradicional",
+                "desc": "Hojas de mandioca trituradas con carne de cerdo y arroz blanco.",
+                "img": "https://raw.githubusercontent.com/Jhontan200/Prueba/main/imagenes/restaurante_6_plato1.webp"
+            }
+        ]
+    }
+]

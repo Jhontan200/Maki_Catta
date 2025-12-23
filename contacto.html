@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Contacto | Maki Catta - Diseña tu Viaje a Madagascar</title>
+  <meta name="description"
+    content="Contáctanos para diseñar tu viaje a medida en Madagascar. Aventuras, lunas de miel y fotografía de fauna con expertos locales.">
+  <meta name="keywords"
+    content="Contacto Maki Catta, Viaje Madagascar, Agencia de Viajes Madagascar, Turismo Sostenible, Tour Operador Local">
+  <meta name="author" content="Maki Catta Turismo">
+  <meta name="robots" content="index, follow">
+
+  <link rel="canonical" href="https://tudominio.com/contacto.html">
+
+  <meta property="og:title" content="Contacto | Maki Catta - Diseña tu Viaje">
+  <meta property="og:description" content="Cuéntanos tus sueños y nosotros los haremos realidad en Madagascar.">
+  <meta property="og:image" content="imagenes/AvenidaDeLasBaobabs.jpg">
+  <meta property="og:url" content="https://tudominio.com/contacto.html">
+  <meta property="og:type" content="website">
+
+  <link rel="icon" href="imagenes/logo_blanco.webp" type="image/webp">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Alegreya:wght@400;700&amp;family=Exo+2:wght@500;700&amp;family=Dosis:wght@400;600&amp;family=Material+Icons+Outlined&amp;family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&amp;display=swap"
+    rel="stylesheet">
+
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+ <script src="js/tailwind.config.js"></script>
+
+  <style>
+    .header-dynamic {
+      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+      z-index: 100;
+    }
+
+    /* ESTILOS FIJOS PARA CUANDO SE HACE SCROLL */
+    .header-scrolled {
+      background-color: rgba(255, 255, 255, 0.95) !important;
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    }
+
+    .dark .header-scrolled {
+      background-color: rgba(26, 22, 20, 0.95) !important;
+    }
+
+    /* Ajustes para el video de fondo */
+    .video-container {
+      position: relative;
+      height: 100vh;
+      width: 100%;
+      overflow: hidden;
+      background-color: #3E2723;
+      background-image: url('imagenes/AvenidaDeLasBaobabs.jpg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+
+    .video-container::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8));
+      z-index: 1;
+    }
+  </style>
+  <link rel="stylesheet" href="css/header.css">
+</head>
+
+<body
+  class="bg-background-light dark:bg-background-dark text-gray-800 dark:text-gray-200 font-body transition-colors duration-300">
+
+  <header id="main-header" class="fixed w-full z-50 transition-all duration-300 bg-transparent py-4 font-button">
+    <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between h-16 items-center">
+        <div class="flex-shrink-0">
+          <a href="index.html" aria-label="Ir al inicio">
+            <img id="logo-light" src="imagenes/logo_blanco.webp" alt="Logo Maki Catta Blanco" width="160" height="64"
+              fetchpriority="high" class="h-16 w-auto object-contain">
+            <img id="logo-dark" src="imagenes/logo.webp" alt="Logo Maki Catta Color" width="160" height="64"
+              class="hidden h-16 w-auto object-contain">
+          </a>
+        </div>
+
+        <div class="hidden md:flex space-x-6 items-center">
+          <a class="nav-link text-white hover:text-accent font-medium transition" href="index.html">Inicio</a>
+          <a class="nav-link text-white/90 hover:text-accent font-medium transition"
+            href="destinos.html">Destinos</a>
+          <a class="nav-link text-white/90 hover:text-accent font-medium transition"
+            href="hoteles_menu.html">Hoteles</a>
+          <a class="nav-link text-white/90 hover:text-accent font-medium transition"
+            href="restaurantes.html">Restaurantes</a>
+          <a class="nav-link text-white/90 hover:text-accent font-medium transition" href="nosotros.html">Sobre
+            Nosotros</a>
+
+          <button id="theme-toggle"
+            class="p-2 rounded-full text-white/90 hover:bg-white/10 transition-colors focus:outline-none"
+            aria-label="Cambiar tema">
+            <span id="theme-icon" class="material-symbols-outlined" aria-hidden="true">light_mode</span>
+          </button>
+
+          <a id="contact-btn"
+            class="px-5 py-2 rounded-full bg-white text-primary hover:bg-accent transition font-bold text-sm shadow-sm"
+            href="contacto.html">
+            Contáctenos
+          </a>
+        </div>
+
+        <div class="md:hidden flex items-center gap-4">
+          <button id="theme-toggle-mobile" class="p-2 rounded-full text-white/90 transition-colors"
+            aria-label="Cambiar tema móvil">
+            <span class="theme-icon-mobile material-symbols-outlined" aria-hidden="true">light_mode</span>
+          </button>
+          <button id="mobile-menu-button" class="text-white focus:outline-none transition-transform active:scale-90"
+            aria-label="Menu">
+            <span id="menu-icon" class="material-icons-outlined text-4xl" aria-hidden="true">menu</span>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <div id="mobile-menu"
+      class="hidden absolute top-0 left-0 w-full h-screen bg-card-light/95 dark:bg-card-dark/95 backdrop-blur-xl z-[-1] flex-col items-center justify-center gap-6 p-8 transition-all duration-300 border-b border-primary/10">
+      <a class="mobile-nav-link text-primary dark:text-white text-3xl font-display font-bold"
+        href="index.html">Inicio</a>
+      <a class="mobile-nav-link text-primary dark:text-white text-3xl font-display font-bold"
+        href="destinos.html">Destinos</a>
+      <a class="mobile-nav-link text-primary dark:text-white text-3xl font-display font-bold"
+        href="hoteles_menu.html">Hoteles</a>
+      <a class="mobile-nav-link text-primary dark:text-white text-3xl font-display font-bold"
+        href="restaurantes.html">Restaurantes</a>
+      <a class="mobile-nav-link text-primary dark:text-white text-3xl font-display font-bold" href="nosotros.html">Sobre
+        Nosotros</a>
+      <a class="mt-4 px-10 py-4 rounded-full bg-primary text-white font-button font-bold text-xl shadow-xl active:scale-95 transition-transform"
+        href="contacto.html">
+        Contáctenos
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <section class="video-container flex items-center justify-center">
+      <div class="relative z-10 text-center px-4">
+        <h1 class="text-6xl md:text-8xl font-display font-bold text-white mb-4 drop-shadow-lg">
+          Diseña tu <span class="text-accent">Viaje</span>
+        </h1>
+        <p class="text-xl md:text-2xl text-gray-200 font-body max-w-2xl mx-auto drop-shadow-md">
+          Cuéntanos tus sueños y nosotros los haremos realidad en Madagascar.
+        </p>
+        <div class="mt-12 animate-bounce">
+          <span class="material-icons-outlined text-white text-4xl opacity-80" aria-hidden="true">expand_more</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="min-h-screen bg-background-light dark:bg-background-dark py-20 flex items-center">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+        <div class="grid lg:grid-cols-2 gap-16">
+
+          <div class="space-y-12">
+            <div>
+              <h2 class="text-4xl font-display font-bold text-primary dark:text-white mb-6">Estamos para asistirte</h2>
+              <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
+                Ya sea que busques una expedición fotográfica, un retiro de lujo en la playa o una aventura de trekking,
+                nuestro equipo de expertos locales está listo para asistirte.
+              </p>
+            </div>
+            <div class="space-y-8">
+              <div class="flex items-start gap-6 group">
+                <div
+                  class="w-14 h-14 bg-primary/10 dark:bg-accent/10 rounded-full flex items-center justify-center group-hover:scale-110 transition">
+                  <span class="material-icons-outlined text-primary dark:text-accent text-2xl"
+                    aria-hidden="true">location_on</span>
+                </div>
+                <div>
+                  <h3 class="text-xl font-bold text-primary dark:text-white">Oficina Principal</h3>
+                  <p class="text-gray-600 dark:text-gray-400">Rue de l'Indépendance, Antananarivo</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-6 group">
+                <div
+                  class="w-14 h-14 bg-primary/10 dark:bg-accent/10 rounded-full flex items-center justify-center group-hover:scale-110 transition">
+                  <span class="material-icons-outlined text-primary dark:text-accent text-2xl"
+                    aria-hidden="true">email</span>
+                </div>
+                <div>
+                  <h3 class="text-xl font-bold text-primary dark:text-white">Email</h3>
+                  <p class="text-gray-600 dark:text-gray-400">info@makicatta.com</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-6 group">
+                <div
+                  class="w-14 h-14 bg-primary/10 dark:bg-accent/10 rounded-full flex items-center justify-center group-hover:scale-110 transition">
+                  <span class="material-icons-outlined text-primary dark:text-accent text-2xl"
+                    aria-hidden="true">phone</span>
+                </div>
+                <div>
+                  <h3 class="text-xl font-bold text-primary dark:text-white">Teléfono / WhatsApp</h3>
+                  <p class="text-gray-600 dark:text-gray-400">+261 20 22 123 45</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="bg-white dark:bg-card-dark p-8 md:p-10 rounded-3xl shadow-2xl border border-gray-100 dark:border-gray-700">
+            <form id="contactForm" class="space-y-6">
+              <div class="grid md:grid-cols-2 gap-6">
+                <div>
+                  <label class="block text-sm font-bold text-gray-700 dark:text-gray-300 mb-2"
+                    for="nombre">Nombre</label>
+                  <input type="text" id="nombre" required
+                    class="w-full rounded-lg border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-800 text-gray-900 dark:text-white focus:ring-primary focus:border-primary">
+                </div>
+                <div>
+                  <label class="block text-sm font-bold text-gray-700 dark:text-gray-300 mb-2"
+                    for="apellido">Apellido</label>
+                  <input type="text" id="apellido" required
+                    class="w-full rounded-lg border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-800 text-gray-900 dark:text-white focus:ring-primary focus:border-primary">
+                </div>
+              </div>
+              <div class="grid md:grid-cols-2 gap-6">
+                <div>
+                  <label class="block text-sm font-bold text-gray-700 dark:text-gray-300 mb-2" for="email">Email</label>
+                  <input type="email" id="email" required
+                    class="w-full rounded-lg border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-800 text-gray-900 dark:text-white focus:ring-primary focus:border-primary">
+                </div>
+                <div>
+                  <label class="block text-sm font-bold text-gray-700 dark:text-gray-300 mb-2" for="viajeros">Nro.
+                    Viajeros</label>
+                  <input type="number" id="viajeros" min="1" placeholder="Ej: 2"
+                    class="w-full rounded-lg border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-800 text-gray-900 dark:text-white focus:ring-primary focus:border-primary">
+                </div>
+              </div>
+              <div>
+                <label class="block text-sm font-bold text-gray-700 dark:text-gray-300 mb-2" for="interes">Interés
+                  Principal</label>
+                <select id="interes"
+                  class="w-full rounded-lg border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-800 text-gray-900 dark:text-white focus:ring-primary focus:border-primary">
+                  <option value="A medida">Viaje a Medida</option>
+                  <option value="Luna de Miel">Luna de Miel</option>
+                  <option value="Aventura">Aventura y Trekking</option>
+                  <option value="Playa">Relax y Playa</option>
+                  <option value="Fotografia">Fotografía de Fauna</option>
+                </select>
+              </div>
+              <div>
+                <label class="block text-sm font-bold text-gray-700 dark:text-gray-300 mb-2" for="mensaje">Detalles del
+                  viaje</label>
+                <textarea id="mensaje" rows="4" required
+                  placeholder="Cuéntanos fechas aproximadas y qué te gustaría ver..."
+                  class="w-full rounded-lg border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-800 text-gray-900 dark:text-white focus:ring-primary focus:border-primary"></textarea>
+              </div>
+              <button type="submit" id="submitBtn"
+                class="w-full bg-primary hover:bg-secondary text-white font-bold py-4 rounded-lg transition-colors shadow-lg flex items-center justify-center gap-2">
+                <span>Enviar Solicitud</span>
+                <span class="material-icons-outlined" aria-hidden="true">send</span>
+              </button>
+              <p id="formStatus" class="text-center text-sm font-bold mt-4 hidden"></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-footer-custom text-gray-400 py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-12 mb-12 text-center md:text-left">
+        <div class="md:col-span-5 flex flex-col items-center md:items-start">
+          <div class="mb-6">
+            <img src="imagenes/logo_footer.webp" alt="Logo" width="120" height="48" class="h-12 w-auto object-contain"
+              loading="lazy">
+          </div>
+          <p class="text-sm font-body max-w-sm text-white/90">
+            Explorando el mundo, un destino a la vez. Tu socio de confianza para viajes inolvidables.
+          </p>
+        </div>
+
+        <div class="md:col-span-7 grid grid-cols-1 sm:grid-cols-3 gap-8">
+          <div class="font-button">
+            <h4 class="text-white font-bold mb-4 uppercase text-xs tracking-wider">Enlaces</h4>
+            <ul class="space-y-2 text-sm">
+              <li><a class="text-white hover:text-accent transition-colors duration-300" href="index.html">Inicio</a>
+              </li>
+              <li><a class="text-white hover:text-accent transition-colors duration-300"
+                  href="destinos.html">Destinos</a></li>
+              <li><a class="text-white hover:text-accent transition-colors duration-300"
+                  href="hoteles_menu.html">Hoteles</a></li>
+              <li><a class="text-white hover:text-accent transition-colors duration-300"
+                  href="restaurantes.html">Restaurantes</a></li>
+              <li><a class="text-white hover:text-accent transition-colors duration-300" href="nosotros.html">Sobre
+                  Nosotros</a></li>
+              <li><a class="text-white hover:text-accent transition-colors duration-300"
+                  href="contacto.html">Contáctenos</a></li>
+            </ul>
+          </div>
+
+          <div class="font-button">
+            <h4 class="text-white font-bold mb-4 uppercase text-xs tracking-wider">Legales</h4>
+            <ul class="space-y-2 text-sm">
+              <li><a class="text-white hover:text-accent transition-colors duration-300"
+                  href="politicas_privacidad.html">Políticas de Privacidad</a></li>
+              <li><a class="text-white hover:text-accent transition-colors duration-300"
+                  href="TerminosUso.html">Términos y Usos</a></li>
+            </ul>
+          </div>
+
+          <div class="font-button">
+            <h4 class="text-white font-bold mb-4 uppercase text-xs tracking-wider">Recursos</h4>
+            <ul class="space-y-2 text-sm">
+              <li><a class="text-white hover:text-accent transition-colors duration-300" href="https://ui-avatars.com/"
+                  target="_blank">UI Avatars</a></li>
+              <li><a class="text-white hover:text-accent transition-colors duration-300"
+                  href="https://fonts.google.com/icons" target="_blank">Google Icons</a></li>
+              <li><a class="text-white hover:text-accent transition-colors duration-300" href="https://supabase.com/"
+                  target="_blank">Supabase DB</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="border-t border-gray-800 pt-8 text-center text-xs font-body">
+        <p class="text-white font-medium">© 2025 Maki Catta Turismo. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+
+      // ==========================================
+      // 1. CONEXIÓN CON SUPABASE
+      // ==========================================
+      // PEGA AQUÍ TUS CREDENCIALES DEL PASO 2
+      const SUPABASE_URL = 'https://faupgauhlnhpcjkommsu.supabase.co';
+      const SUPABASE_KEY = 'sb_publishable_iy_T6LZ3tKprb6e6RNF_wA_fR3rBn03';
+
+      // Inicializamos el cliente. 
+      // Usamos un try/catch para que si olvidas poner las claves, la página no se rompa visualmente.
+      let supabaseClient = null;
+      try {
+        if (SUPABASE_URL.startsWith('http')) {
+          supabaseClient = supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
+        } else {
+          console.error("¡OJO! Falta configurar la URL de Supabase en el código.");
+        }
+      } catch (err) {
+        console.error("Error iniciando Supabase:", err);
+      }
+
+      // ==========================================
+      // 2. LÓGICA DEL FORMULARIO (EL REQUISITO JSON)
+      // ==========================================
+      const form = document.getElementById('contactForm');
+      const statusMsg = document.getElementById('formStatus');
+      const submitBtn = document.getElementById('submitBtn');
+
+      if (form) {
+        form.addEventListener('submit', async (e) => {
+          e.preventDefault(); // Evita que la página se recargue
+
+          // Verificación de seguridad básica
+          if (!supabaseClient) {
+            alert("Error: No has configurado las claves de Supabase en el código.");
+            return;
+          }
+
+          // Cambiar botón a estado "Enviando..."
+          submitBtn.disabled = true;
+          submitBtn.innerHTML = '<span class="animate-spin material-icons-outlined">refresh</span> Enviando...';
+
+          // ---------------------------------------------------------
+          // AQUÍ ESTÁ EL FORMATO JSON OBLIGATORIO
+          // Recolectamos los datos y creamos el objeto JSON "formData"
+          // ---------------------------------------------------------
+          const formData = {
+            nombre: document.getElementById('nombre').value,
+            apellido: document.getElementById('apellido').value,
+            email: document.getElementById('email').value,
+            viajeros: document.getElementById('viajeros').value,
+            interes: document.getElementById('interes').value,
+            mensaje: document.getElementById('mensaje').value,
+            fecha: new Date().toISOString() // Fecha automática en formato ISO
+          };
+
+          console.log("Enviando JSON:", formData); // Para que veas el JSON en la consola
+
+          try {
+            // Enviamos el JSON a la tabla 'contactos' de Supabase
+            const {
+              data,
+              error
+            } = await supabaseClient
+              .from('contactos')
+              .insert([formData]);
+
+            if (error) throw error;
+
+            // Éxito
+            statusMsg.textContent = "¡Mensaje enviado con éxito! Te contactaremos pronto.";
+            statusMsg.className = "text-center text-sm font-bold mt-4 text-green-500 block";
+            form.reset(); // Limpiar formulario
+
+          } catch (error) {
+            console.error("Error al enviar:", error);
+            statusMsg.textContent = "Error al conectar. Revisa la consola (F12) para más detalles.";
+            statusMsg.className = "text-center text-sm font-bold mt-4 text-red-500 block";
+          } finally {
+            // Restaurar botón
+            submitBtn.disabled = false;
+            submitBtn.innerHTML = '<span>Enviar Solicitud</span><span class="material-icons-outlined">send</span>';
+          }
+        });
+      }
+
+      // ==========================================
+      // 3. LÓGICA VISUAL (NAVBAR, SCROLL, TEMA)
+      const header = document.getElementById('main-header');
+      const mobileBtn = document.getElementById('mobile-menu-button');
+      const mobileMenu = document.getElementById('mobile-menu');
+      const menuIcon = document.getElementById('menu-icon');
+      const logoLight = document.getElementById('logo-light');
+      const logoDark = document.getElementById('logo-dark');
+      const navLinks = document.querySelectorAll('.nav-link');
+      const contactBtn = document.getElementById('contact-btn');
+
+      const themeToggle = document.getElementById('theme-toggle');
+      const themeToggleMobile = document.getElementById('theme-toggle-mobile');
+      const htmlElement = document.documentElement;
+
+      function updateThemeUI() {
+        const isDark = htmlElement.classList.contains('dark');
+        const iconName = isDark ? 'light_mode' : 'dark_mode';
+
+        const desktopIcon = document.getElementById('theme-icon');
+        const mobileIcon = document.querySelector('.theme-icon-mobile');
+
+        [desktopIcon, mobileIcon].forEach(icon => {
+          if (icon) {
+            icon.classList.add('theme-icon-animate', 'icon-rotate');
+            setTimeout(() => {
+              icon.textContent = iconName;
+              icon.classList.remove('icon-rotate');
+            }, 250);
+          }
+        });
+      }
+
+      function toggleDarkMode() {
+        htmlElement.classList.toggle('dark');
+        const isDark = htmlElement.classList.contains('dark');
+        localStorage.setItem('theme', isDark ? 'dark' : 'light');
+        updateThemeUI();
+        updateHeaderStyles();
+      }
+
+      if (themeToggle) themeToggle.addEventListener('click', toggleDarkMode);
+      if (themeToggleMobile) themeToggleMobile.addEventListener('click', toggleDarkMode);
+
+      if (localStorage.getItem('theme') === 'dark' ||
+        (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        htmlElement.classList.add('dark');
+      }
+      updateThemeUI();
+
+      function updateHeaderStyles() {
+        window.requestAnimationFrame(() => {
+          const isScrolled = window.scrollY > 50;
+          const isMenuOpen = mobileMenu?.classList.contains('flex');
+          const isDark = htmlElement.classList.contains('dark');
+
+          header.classList.add('transition-all', 'duration-500');
+
+          // --- 1. LÓGICA DE LOGO: BLANCO FIJO EN DARK MODE ---
+          if (isDark) {
+            logoLight?.classList.remove('hidden');
+            logoDark?.classList.add('hidden');
+          } else {
+            if (isScrolled || isMenuOpen) {
+              logoLight?.classList.add('hidden');
+              logoDark?.classList.remove('hidden');
+            } else {
+              logoLight?.classList.remove('hidden');
+              logoDark?.classList.add('hidden');
+            }
+          }
+
+          // --- 2. FONDO DEL HEADER Y LINKS ---
+          if (isScrolled || isMenuOpen) {
+            header.classList.add('bg-white/95', 'dark:bg-slate-900/95', 'backdrop-blur-md', 'shadow-md', 'py-2');
+            header.classList.remove('bg-transparent', 'py-4');
+
+            navLinks.forEach(link => {
+              link.classList.remove('text-white');
+              link.classList.add('text-slate-700', 'dark:text-gray-200');
+            });
+
+            if (contactBtn) {
+              contactBtn.classList.remove('bg-white', 'text-primary');
+              contactBtn.classList.add('bg-primary', 'text-white');
+            }
+
+            // --- 3. LÓGICA DE ICONOS (MÁXIMA PRIORIDAD AL COLOR OSCURO) ---
+            [themeToggle, themeToggleMobile, mobileBtn].forEach(el => {
+              if (el) {
+                if (isDark) {
+                  // En modo oscuro siempre blanco
+                  el.classList.add('text-white');
+                  el.classList.remove('text-slate-950', 'text-gray-800');
+                } else {
+                  // CORRECCIÓN FINAL MODO CLARO + SCROLL: Forzamos color oscuro nítido
+                  el.classList.remove('text-white');
+                  el.classList.add('text-slate-950'); // Color negro Slate muy oscuro
+                }
+              }
+            });
+
+          } else {
+            // ESTADO INICIAL / TRANSPARENTE
+            header.classList.add('bg-transparent', 'py-4');
+            header.classList.remove('bg-white/95', 'dark:bg-slate-900/95', 'backdrop-blur-md', 'shadow-md', 'py-2');
+
+            navLinks.forEach(link => {
+              link.classList.add('text-white');
+              link.classList.remove('text-slate-700', 'dark:text-gray-200');
+            });
+
+            if (contactBtn) {
+              contactBtn.classList.remove('bg-primary', 'text-white');
+              contactBtn.classList.add('bg-white', 'text-primary');
+            }
+
+            // Todos los iconos blancos sobre fondo transparente (hero image)
+            [themeToggle, themeToggleMobile, mobileBtn].forEach(el => {
+              if (el) {
+                el.classList.add('text-white');
+                el.classList.remove('text-slate-950');
+              }
+            });
+          }
+        });
+      }
+
+      if (mobileBtn && mobileMenu) {
+        mobileBtn.addEventListener('click', () => {
+          const isOpening = mobileMenu.classList.contains('hidden');
+          if (isOpening) {
+            mobileMenu.classList.replace('hidden', 'flex');
+            menuIcon.textContent = 'close';
+            document.body.style.overflow = 'hidden';
+          } else {
+            mobileMenu.classList.replace('flex', 'hidden');
+            menuIcon.textContent = 'menu';
+            document.body.style.overflow = '';
+          }
+          updateHeaderStyles();
+        });
+      }
+
+      window.addEventListener('scroll', updateHeaderStyles, {
+        passive: true
+      });
+      updateHeaderStyles();
+    });
+  </script>
+</body>
+
+</html>

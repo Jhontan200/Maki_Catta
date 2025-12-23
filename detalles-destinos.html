@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta name="description"
+        content="Explora los detalles de nuestros destinos exclusivos en Madagascar. Itinerarios, precios y consejos de viaje con Maki Catta.">
+    <link rel="icon" href="../imagenes/logo_blanco.webp" type="image/png">
+    <title>Detalles del Destino - Maki Catta</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alegreya:wght@400;700&family=Exo+2:wght@500;700&family=Dosis:wght@400;600&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+        rel="stylesheet" />
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+
+    <script src="js/tailwind.config.js"></script>
+    <style>
+        .tab-content {
+            display: none;
+        }
+
+        .tab-content.active {
+            display: block;
+            animation: fadeIn 0.4s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate-zoom {
+            animation: zoom 0.3s ease-out;
+        }
+
+        @keyframes zoom {
+            from {
+                transform: scale(0.9);
+                opacity: 0;
+            }
+
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="css/header.css">
+</head>
+
+<body
+    class="bg-background-light dark:bg-background-dark text-gray-800 dark:text-gray-200 font-body transition-colors duration-300">
+
+    <header id="main-header" class="fixed w-full z-50 transition-all duration-300 bg-transparent py-4 font-button">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex-shrink-0">
+                    <a href="index.html" aria-label="Ir a la página de inicio">
+                        <img id="logo-light" src="imagenes/logo_blanco.webp" alt="Logo" width="160" height="64"
+                            fetchpriority="high" class="h-16 w-auto object-contain">
+                        <img id="logo-dark" src="imagenes/logo.webp" alt="Logo" width="160" height="64"
+                            class="hidden h-16 w-auto object-contain">
+                    </a>
+                </div>
+
+                <div class="hidden md:flex space-x-6 items-center">
+                    <a class="nav-link text-white/90 hover:text-accent font-medium transition"
+                        href="index.html">Inicio</a>
+
+                    <a class="nav-link text-accent font-medium transition border-b-2 border-accent" href="destinos.html"
+                        aria-current="page">Destinos</a>
+
+                    <a class="nav-link text-white/90 hover:text-accent font-medium transition"
+                        href="hoteles_menu.html">Hoteles</a>
+
+                    <a class="nav-link text-white/90 hover:text-accent font-medium transition"
+                        href="restaurantes.html">Restaurantes</a>
+
+                    <a class="nav-link text-white/90 hover:text-accent font-medium transition"
+                        href="nosotros.html">Sobre Nosotros</a>
+
+                    <button id="theme-toggle"
+                        class="p-2 rounded-full text-white/90 hover:bg-white/10 transition-colors focus:outline-none"
+                        aria-label="Cambiar tema">
+                        <span id="theme-icon" class="material-symbols-outlined">light_mode</span>
+                    </button>
+
+                    <a id="contact-btn"
+                        class="px-5 py-2 rounded-full bg-white text-primary hover:bg-accent transition font-bold text-sm shadow-sm"
+                        href="contacto.html">
+                        Contáctenos
+                    </a>
+                </div>
+
+                <div class="md:hidden flex items-center gap-4">
+                    <button id="theme-toggle-mobile" class="p-2 rounded-full text-white/90 transition-colors"
+                        aria-label="Cambiar tema">
+                        <span class="theme-icon-mobile material-symbols-outlined">light_mode</span>
+                    </button>
+                    <button id="mobile-menu-button"
+                        class="text-white focus:outline-none transition-transform active:scale-90"
+                        aria-label="Abrir menú">
+                        <span id="menu-icon" class="material-icons-outlined text-4xl">menu</span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+        <div id="mobile-menu"
+            class="hidden absolute top-0 left-0 w-full h-screen bg-card-light/95 dark:bg-card-dark/95 backdrop-blur-xl z-[-1] flex-col items-center justify-center gap-6 p-8 transition-all duration-300 border-b border-primary/10">
+
+            <a class="mobile-nav-link text-primary dark:text-white text-3xl font-display font-bold"
+                href="index.html">Inicio</a>
+
+            <a class="mobile-nav-link text-accent text-3xl font-display font-bold" href="destinos.html"
+                aria-current="page">Destinos</a>
+
+            <a class="mobile-nav-link text-primary dark:text-white text-3xl font-display font-bold"
+                href="hoteles_menu.html">Hoteles</a>
+
+            <a class="mobile-nav-link text-primary dark:text-white text-3xl font-display font-bold"
+                href="restaurantes.html">Restaurantes</a>
+
+            <a class="mobile-nav-link text-primary dark:text-white text-3xl font-display font-bold"
+                href="nosotros.html">Sobre Nosotros</a>
+
+            <a class="mt-4 px-10 py-4 rounded-full bg-primary text-white font-button font-bold text-xl shadow-xl active:scale-95 transition-transform"
+                href="contacto.html">
+                Contáctenos
+            </a>
+        </div>
+    </header>
+    <section class="relative h-[45vh] flex items-center overflow-hidden bg-gray-900">
+        <img id="dest-banner" fetchpriority="high"
+            class="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-500"
+            alt="Banner destino">
+        <div class="absolute inset-0 bg-black/50 backdrop-blur-[2px]"></div>
+        <div class="relative z-10 mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8 mt-12 text-white">
+            <a href="destinos.html"
+                class="mb-4 inline-flex items-center text-accent font-bold text-[10px] uppercase tracking-widest group">
+                <span
+                    class="material-symbols-outlined mr-2 group-hover:-translate-x-1 transition-transform">arrow_back</span>
+                Volver
+            </a>
+            <h1 id="dest-titulo" class="text-5xl md:text-7xl font-display font-bold">Cargando...</h1>
+            <p id="dest-tagline" class="text-accent font-display italic text-2xl mt-2"></p>
+        </div>
+    </section>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-16 relative z-20 pb-20">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <div class="lg:col-span-2 space-y-8">
+                <div class="bg-white dark:bg-card-dark p-2 rounded-[2.5rem] shadow-2xl">
+                    <img id="main-img"
+                        class="w-full h-[450px] object-cover rounded-[2rem] transition-opacity duration-500 cursor-zoom-in bg-gray-200 dark:bg-gray-800"
+                        alt="Imagen principal">
+                    <div id="thumb-grid" class="flex gap-4 p-4 overflow-x-auto"></div>
+                </div>
+
+                <div class="bg-white dark:bg-card-dark rounded-[2rem] p-8 shadow-xl">
+                    <div class="flex gap-8 border-b dark:border-gray-800 mb-8" role="tablist">
+                        <button onclick="openTab(event, 'tab-desc')"
+                            class="tab-btn active border-b-2 border-transparent text-gray-400 dark:text-accent pb-4 font-bold text-[15px] uppercase tracking-widest">Descripción</button>
+                        <button onclick="openTab(event, 'tab-itin')"
+                            class="tab-btn border-b-2 border-transparent text-gray-400 pb-4 font-bold text-[15px] uppercase tracking-widest">Itinerario</button>
+                        <button onclick="openTab(event, 'tab-info')"
+                            class="tab-btn border-b-2 border-transparent text-gray-400 pb-4 font-bold text-[15px] uppercase tracking-widest">Importante</button>
+                    </div>
+                    <div id="tab-desc" class="tab-content active space-y-6">
+                        <p id="dest-desc" class="text-[18px] text-gray-600 dark:text-gray-300 leading-relaxed"></p>
+                        <div id="dest-ventajas" class="grid md:grid-cols-2 gap-4"></div>
+                    </div>
+                    <div id="tab-itin" class="tab-content">
+                        <div id="itin-list" class="relative border-l-2 border-accent/30 ml-4 space-y-10 py-4"></div>
+                    </div>
+                    <div id="tab-info" class="tab-content space-y-4">
+                        <div
+                            class="p-6 bg-red-50 dark:bg-red-900/10 rounded-2xl border border-red-100 dark:border-red-900/30">
+                            <h4 class="font-bold text-red-800 dark:text-red-400 mb-2 text-[18px]">Seguridad y Fady</h4>
+                            <p id="dest-fady" class="text-[15px]"></p>
+                        </div>
+                        <div
+                            class="p-6 bg-blue-50 dark:bg-blue-900/10 rounded-2xl border border-blue-100 dark:border-blue-900/30">
+                            <h4 class="font-bold text-blue-800 dark:text-blue-400 mb-2 text-[18px]">Cancelación</h4>
+                            <p id="dest-cancel" class="text-[15px]"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <aside class="lg:col-span-1">
+                <div class="sticky top-28 space-y-6">
+
+                    <div class="bg-white dark:bg-card-dark rounded-[2.5rem] p-8 shadow-2xl border dark:border-gray-800">
+                        <p class="text-[14px] uppercase font-bold mb-1 text-gray-500 dark:text-gray-400">Precio desde
+                        </p>
+                        <h3 id="dest-precio" class="text-5xl font-display font-bold text-primary dark:text-white mb-2">
+                        </h3>
+                        <p id="dest-precio-det" class="text-[15px] text-gray-800 dark:text-gray-300 mb-8"></p>
+
+                        <div class="space-y-4 mb-8 text-[15px]">
+                            <p class="flex items-center gap-3">
+                                <span class="material-symbols-outlined text-secondary">schedule</span>
+                                <span id="dest-duracion" class="dark:text-gray-200"></span>
+                            </p>
+                            <p class="flex items-center gap-3">
+                                <span class="material-symbols-outlined text-secondary">translate</span>
+                                <span id="dest-idiomas" class="dark:text-gray-200"></span>
+                            </p>
+                        </div>
+
+                        <a id="btn-whatsapp" target="_blank"
+                            class="w-full bg-primary hover:bg-secondary text-white py-5 rounded-2xl font-bold uppercase tracking-widest transition-all text-[15px] flex justify-center items-center">
+                            Reservar Ahora
+                        </a>
+
+                        <div id="incluye-lista" class="mt-8 pt-8 border-t dark:border-gray-800 space-y-3">
+                        </div>
+                    </div>
+
+                    <div class="bg-white dark:bg-card-dark rounded-[2.5rem] p-8 shadow-2xl border dark:border-gray-800">
+                        <div class="flex items-center justify-center gap-3 mb-6 text-center">
+                            <h3 class="text-xl font-display font-bold dark:text-white">Pronóstico Semanal</h3>
+                        </div>
+
+                        <div id="weather-forecast" class="space-y-4">
+                            <div class="flex justify-center py-4">
+                                <div class="animate-spin rounded-full h-8 w-8 border-b-2 border-accent"></div>
+                            </div>
+                        </div>
+
+                        <p class="text-[10px] text-gray-400 mt-6 text-center uppercase tracking-widest">
+                            Datos provistos por OpenWeather
+                        </p>
+                    </div>
+
+                </div>
+            </aside>
+
+        </div>
+    </main>
+
+    <footer class="bg-footer-custom text-gray-400 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-12 mb-12 text-center md:text-left">
+                <div class="md:col-span-5 flex flex-col items-center md:items-start">
+                    <div class="mb-6">
+                        <img src="imagenes/logo_footer.webp" alt="Logo" width="120" height="48"
+                            class="h-12 w-auto object-contain" loading="lazy">
+                    </div>
+                    <p class="text-sm font-body max-w-sm text-white/90">
+                        Explorando el mundo, un destino a la vez. Tu socio de confianza para viajes inolvidables.
+                    </p>
+                </div>
+
+                <div class="md:col-span-7 grid grid-cols-1 sm:grid-cols-3 gap-8">
+                    <div class="font-button">
+                        <h4 class="text-white font-bold mb-4 uppercase text-xs tracking-wider">Enlaces</h4>
+                        <ul class="space-y-2 text-sm">
+                            <li><a class="text-white hover:text-accent transition-colors duration-300"
+                                    href="index.html">Inicio</a></li>
+                            <li><a class="text-white hover:text-accent transition-colors duration-300"
+                                    href="destinos.html">Destinos</a></li>
+                            <li><a class="text-white hover:text-accent transition-colors duration-300"
+                                    href="hoteles_menu.html">Hoteles</a></li>
+                            <li><a class="text-white hover:text-accent transition-colors duration-300"
+                                    href="restaurantes.html">Restaurantes</a></li>
+                            <li><a class="text-white hover:text-accent transition-colors duration-300"
+                                    href="nosotros.html">Sobre Nosotros</a></li>
+                            <li><a class="text-white hover:text-accent transition-colors duration-300"
+                                    href="contacto.html">Contáctenos</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="font-button">
+                        <h4 class="text-white font-bold mb-4 uppercase text-xs tracking-wider">Legales</h4>
+                        <ul class="space-y-2 text-sm">
+                            <li><a class="text-white hover:text-accent transition-colors duration-300"
+                                    href="politicas_privacidad.html">Políticas de Privacidad</a></li>
+                            <li><a class="text-white hover:text-accent transition-colors duration-300"
+                                    href="TerminosUso.html">Términos y Usos</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="font-button">
+                        <h4 class="text-white font-bold mb-4 uppercase text-xs tracking-wider">Recursos</h4>
+                        <ul class="space-y-2 text-sm">
+                            <li><a class="text-white hover:text-accent transition-colors duration-300"
+                                    href="https://ui-avatars.com/" target="_blank">UI Avatars</a></li>
+                            <li><a class="text-white hover:text-accent transition-colors duration-300"
+                                    href="https://fonts.google.com/icons" target="_blank">Google Icons</a></li>
+                            <li><a class="text-white hover:text-accent transition-colors duration-300"
+                                    href="https://supabase.com/" target="_blank">Supabase DB</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 pt-8 text-center text-xs font-body">
+                <p class="text-white font-medium">© 2025 Maki Catta Turismo. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div id="image-modal"
+        class="fixed inset-0 z-[100] hidden bg-black/95 flex items-center justify-center p-4 cursor-zoom-out">
+        <span
+            class="absolute top-5 right-5 text-white material-symbols-outlined text-4xl cursor-pointer hover:text-accent transition">close</span>
+        <img id="modal-img" src="" class="max-w-full max-h-[90vh] rounded-lg shadow-2xl object-contain animate-zoom"
+            alt="Vista ampliada">
+    </div>
+
+    <script src="js/header.js"></script>
+    <script src="js/script-detalle.js"></script>
+</body>
+
+</html>
